@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-  color: red; 
+  color: white; 
   text-align: center;
   border: 3px solid gray; 
   width: 30%; 
@@ -17,6 +17,7 @@ h2 {
   margin-right: auto;
   position: relative; 
   padding: 5px; 
+  background: #333333;
 
 }
 
@@ -36,6 +37,8 @@ h3 {
    width: 500px; 
    border: 1px solid gray; 
    height: 300px;
+   border-radius: 20px; 
+   background: #e6e6e6;
 }
 
 .input {
@@ -63,12 +66,17 @@ h3 {
 
 button {
   margin: 5px;
-  width: 40px; 
+  width: 45px; 
   height: 30px; 
   font-size: 12px; 
+  border-radius: 10px; 
+  background: #333333;
+  color: white; 
 }
 
 input {
   text-align: center; 
   font-size: 15px; 
+  border: 2px solid black; 
+  font-weight: bolder; 
 }
