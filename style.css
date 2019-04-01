@@ -1,3 +1,74 @@
 h1 {
+  color: black;  
+  text-align: center;
+  width: 30%; 
+  margin-left: auto; 
+  margin-right: auto;
+  position: relative; 
+  padding: 5px; 
+}
+
+h2 {
   color: red; 
+  text-align: center;
+  border: 3px solid gray; 
+  width: 30%; 
+  margin-left: auto; 
+  margin-right: auto;
+  position: relative; 
+  padding: 5px; 
+
+}
+
+h3 {
+  text-align: center;
+}
+
+#main {
+  width: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.main {
+   width: 500px; 
+   border: 1px solid gray; 
+   height: 300px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.top {
+  margin-top: 10px; 
+  text-align: center;
+}
+
+.mid {
+  text-align: center;
+}
+
+.bottom {
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  width: 40px; 
+  height: 30px; 
+  font-size: 12px; 
+}
+
+input {
+  text-align: center; 
+  font-size: 15px; 
 }

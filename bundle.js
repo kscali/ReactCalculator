@@ -164,6 +164,16 @@ function (_React$Component) {
     _this.mult = _this.mult.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.divide = _this.divide.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.clear = _this.clear.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.one = _this.one.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.two = _this.two.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.three = _this.three.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.four = _this.four.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.five = _this.five.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.six = _this.six.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.seven = _this.seven.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.eight = _this.eight.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.nine = _this.nine.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.zero = _this.zero.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   } //your code here
 
@@ -171,23 +181,55 @@ function (_React$Component) {
   _createClass(Calculator, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.result), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "main"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, this.state.result), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "input"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         onChange: this.setNum1,
         value: this.state.num1
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         onChange: this.setNum2,
         value: this.state.num2
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        onClick: this.clear
-      }, "Clear"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "top"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.seven
+      }, "7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.eight
+      }, "8"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.nine
+      }, "9"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.add
-      }, "+"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "+")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "mid"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.four
+      }, "4"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.five
+      }, "5"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.six
+      }, "6"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.sub
-      }, "-"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bottom"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.one
+      }, "1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.two
+      }, "2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.three
+      }, "3"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.mult
-      }, "*"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "*")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.zero
+      }, "0"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.divide
-      }, "/"));
+      }, "/"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.clear
+      }, "Clear")));
     }
   }, {
     key: "setNum1",
@@ -236,6 +278,136 @@ function (_React$Component) {
       this.setState({
         result: result
       });
+    }
+  }, {
+    key: "one",
+    value: function one() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 1
+        });
+      } else {
+        this.setState({
+          num1: 1
+        });
+      }
+    }
+  }, {
+    key: "two",
+    value: function two() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 2
+        });
+      } else {
+        this.setState({
+          num1: 2
+        });
+      }
+    }
+  }, {
+    key: "three",
+    value: function three() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 3
+        });
+      } else {
+        this.setState({
+          num1: 3
+        });
+      }
+    }
+  }, {
+    key: "four",
+    value: function four() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 4
+        });
+      } else {
+        this.setState({
+          num1: 4
+        });
+      }
+    }
+  }, {
+    key: "five",
+    value: function five() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 5
+        });
+      } else {
+        this.setState({
+          num1: 5
+        });
+      }
+    }
+  }, {
+    key: "six",
+    value: function six() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 6
+        });
+      } else {
+        this.setState({
+          num1: 6
+        });
+      }
+    }
+  }, {
+    key: "seven",
+    value: function seven() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 7
+        });
+      } else {
+        this.setState({
+          num1: 7
+        });
+      }
+    }
+  }, {
+    key: "eight",
+    value: function eight() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 8
+        });
+      } else {
+        this.setState({
+          num1: 8
+        });
+      }
+    }
+  }, {
+    key: "nine",
+    value: function nine() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 9
+        });
+      } else {
+        this.setState({
+          num1: 9
+        });
+      }
+    }
+  }, {
+    key: "zero",
+    value: function zero() {
+      if (this.state.num1 !== "") {
+        this.setState({
+          num2: 0
+        });
+      } else {
+        this.setState({
+          num1: 0
+        });
+      }
     }
   }, {
     key: "clear",
